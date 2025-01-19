@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+     background-image: url('Assets/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+}
+
+/* Header */
+header {
+    background-color: #02353C;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main Content */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.add-event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.add-event-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.add-event-form input,
+.add-event-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.add-event-form input:focus,
+.add-event-form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.add-event-form textarea {
+    resize: vertical;
+}
+
+/* Button Styles */
+.add-event-form button {
+    background-color: #02353C;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-event-form button:hover {
+    background-color: #3FD0C9;
+}
+
+.add-event-form button:active {
+    background-color: #3e8e41;
+}
+
+/* Success Message */
+main p {
+    color: #4CAF50;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Back Link */
+main a {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
